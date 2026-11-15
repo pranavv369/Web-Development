@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Projects Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    grid-auto-rows: minmax(230px, auto);
+}
+
+/* Project Card */
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Featured Project */
+.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.featured img {
+    height: 350px;
+}
+
+.project h2 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.project p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Project Button */
+.project a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background-color: #1e40af;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .featured img {
+        height: 220px;
+    }
+
+}

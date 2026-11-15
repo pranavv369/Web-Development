@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --accent-color: #f59e0b;
+    --background-color: #f1f5f9;
+    --text-color: #333;
+
+    --small-size: 14px;
+    --normal-size: 16px;
+    --heading-size: 32px;
+
+    --spacing: 20px;
+    --border-radius: 8px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: var(--normal-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--spacing);
+}
+
+h1 {
+    font-size: var(--heading-size);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+small {
+    font-size: var(--small-size);
+}
+
+section {
+    background-color: white;
+    margin: var(--spacing);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+}
+
+.color-box {
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    border-radius: var(--border-radius);
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
